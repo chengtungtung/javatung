@@ -15,7 +15,7 @@ public class Tung31 {
 		印出：
 		true        // 兩物件為相同物件實體，代表記憶體位置相同
 		Tung        // 可看出s1沒有變，因為字串一產生，字串內容不會變
-        Tungiii     
+		Tungiii     
 		 */
 		
 		s1.replace('u', 'k');  // replace代表是置換，參數要填入字元，會將原字串"Tung"的字元'u'換成字元'k'
