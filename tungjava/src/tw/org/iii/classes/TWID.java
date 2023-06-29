@@ -48,12 +48,18 @@ public class TWID {
 		this.id = id;  // this是指那個物件
 	}
 	
-	public static TWID newTWID(String id) {
+	public static TWID newTWID(String id) {     // static方法，不需要物件，類別名稱.newTWID(String id)參數打進去，就可以呼叫 
 		if(isRightID(id)) {
 			return new TWID(id);
+			
 		}else {
 			return null;
 		}
+	}
+	
+	@Override
+	public String toString() {
+		return id;
 	}
 	
 	/*

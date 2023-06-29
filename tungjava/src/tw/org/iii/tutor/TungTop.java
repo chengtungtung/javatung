@@ -38,7 +38,7 @@ public class TungTop {
 		 30：TWID 最終測試
 		 31：字串特性(字串內容不會變)、concat、replace
 		 32：
-		 33：
+		 33：多型(型別轉換)、instanceof(判別是否為直系)
 		 34：
 		 35：
 		 36：

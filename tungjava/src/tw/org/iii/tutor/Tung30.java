@@ -15,6 +15,15 @@ public class Tung30 {
 		System.out.println(id3.getid());
 		System.out.println(id4.getid());
 		
+		System.out.println("-------------------------");
+		TWID id = TWID.newTWID("A123456785");  // 可以自行填入身分證字號
+		if(id == null) {
+			System.out.println("xx");
+		}else {
+			System.out.println("ok");
+		}
+		
+		System.out.println(id);
 	}
 
 }
