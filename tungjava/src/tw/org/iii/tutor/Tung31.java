@@ -25,7 +25,7 @@ public class Tung31 {
 		/*
 		印出：
 		Tung      // 字串內容不會變，所以s1印出來還是維持"Tung"，但已經換完做return的動作了
-        Tkng      // 所以已經return字串回來，放進變數s3，再將s3印出來，就會置換了
+		Tkng      // 所以已經return字串回來，放進變數s3，再將s3印出來，就會置換了
 		 */
 		
 		s1 = "kkk";
