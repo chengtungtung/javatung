@@ -7,6 +7,7 @@ public class Tung33 {
 		// Car(父類別)----Fcar(子類別)
 		//	     └-------Mcar(子類別)
 		// Fcar跟Mcar沒有任何關係，因為是旁系
+		// 子類別想要創造多型
 		
 		Car car1 = new Car();
 		car1.m1();car1.m2();

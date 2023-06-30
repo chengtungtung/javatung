@@ -44,6 +44,17 @@ public class TungTop {
 		 36：
 		 37：
 		 38：
+		 39
+		 40
+		 41
+		 42
+		 43
+		 45
+		 46
+		 47
+		 48
+		 49
+		 50
 		 
 		 99：九九乘法表(for迴圈、if、break)、找質數題目
 		 pokerv1：洗牌(陣列、for、boolean)

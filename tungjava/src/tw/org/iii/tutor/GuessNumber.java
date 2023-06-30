@@ -18,26 +18,31 @@ import javax.swing.JTextField;
 import javax.swing.text.StyledEditorKit.FontSizeAction;
 
 public class GuessNumber extends JFrame{   // 繼承Jframe
+	// 物件屬性 (設定物件屬性是為了之後會一直用到)
 	private JButton guess;
 	private JTextField input;
 	private JTextArea log;
-	private String answer;
+	private String answer; // 謎底
 	private int counter;
 	
+	// 建構式
 	public GuessNumber() {
 		super("猜數字 1A2B");
 		
-		// 完成初始化
-		guess = new JButton("猜");
-		input = new JTextField();
-		log = new JTextArea();
+		// 物件完成初始化，初始化完後是擁有此物件，但還沒版面配置，所以執行後視窗也不會跑出來這些物件
+		guess = new JButton("猜");  // JButton按鈕
+		input = new JTextField();  // JTextField只能填入單列文字
+		log = new JTextArea();     // JTextArea能填入多列文字
+		// JButton、JTextField、JTextArea的父類別都是Component(元件)，所以他們都is_a_Component(元件)
 		
-		setLayout(new BorderLayout()); // LayoutManager 是介面
-		JPanel top = new JPanel(new BorderLayout()); // 區域變數  
-		add(top , BorderLayout.NORTH);
+		// 處理版面 
+		setLayout(new BorderLayout()); // LayoutManager 是介面(介面裡面沒有一般方法，所以都要實作)  // 呼叫Jframe的setLayout(設定布局)方法，用意在視窗拉大拉小的時候，會跟著調整
+		JPanel top = new JPanel(new BorderLayout()); // top是區域變數，但在建構式中，所以一旦產生GuessNumber物件後，top就會不見  // JPanel是要做一個隔間
+		add(top , BorderLayout.NORTH);  // JFrame裡有個從Container繼承的add方法，add(Component comp)，參數只要丟Component(元件)，就可以加進去Jframe視窗
 		top.add(guess, BorderLayout.EAST);
 		top.add(input, BorderLayout.CENTER);
 		
+		//add(log , BorderLayout.CENTER);  // 在第一層的BorderLayout的中間(但因為log區域正常來講，不能讓使用者編輯，所以要再調整)
 		JScrollPane jsp = new JScrollPane(log);
 		add(jsp,BorderLayout.CENTER);
 		
