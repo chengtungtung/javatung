@@ -96,8 +96,6 @@ public class Tung38training extends JFrame implements MouseListener{ // 方法�
 	//----------------------------------------------------------
 	
 	
-	
-	
 	//-------------------<方法二>---------------------------------
 	// 方法二：直接由Tung38training實作MouseListener介面，所以底下有五個方法要實作
 	@Override
@@ -114,17 +112,14 @@ public class Tung38training extends JFrame implements MouseListener{ // 方法�
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-	
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-	
 	}
 	//--------------------------------------------------------------------------
 }
@@ -143,8 +138,7 @@ class MyMouseListener1 implements MouseListener{
 	
 	@Override // mouseClicked 要在原地放開才會觸發
 	public void mouseClicked(MouseEvent e) {  // 只要有大括號就是有實作
-		System.out.println("click");
-		
+		System.out.println("click");	
 	}
 
 	@Override // mousePressed 點擊
@@ -156,18 +150,15 @@ class MyMouseListener1 implements MouseListener{
 
 	@Override // mouseReleased 放開
 	public void mouseReleased(MouseEvent e) {
-		System.out.println("放開位置:" + e.getX() + "," + e.getY());
-		
+		System.out.println("放開位置:" + e.getX() + "," + e.getY());	
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-
 	}
 }
 /*
