@@ -1,6 +1,8 @@
 package tw.org.iii.tutor;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -11,7 +13,7 @@ import javax.swing.JTextField;
 // 滑鼠練習
 public class Tung38training extends JFrame implements MouseListener{ // 方法二直接實作MouseListener，底下有五個方法要實作
 	// 屬性
-	private JTextField mesg, mesg2 , mesg3 , mesg4 , mesg5; // mesg是方法一的，mesg2是方法二...
+	private JTextField mesg, mesg2 , mesg3 , mesg4 , mesg5 ; // mesg是方法一的，mesg2是方法二...
 	
 	
 	// 建構式
@@ -21,22 +23,38 @@ public class Tung38training extends JFrame implements MouseListener{ // 方法�
 		
 		setLayout(new BorderLayout());
 		JPanel top = new JPanel(new BorderLayout());
-		JPanel bottom = new JPanel(new BorderLayout());
+		JPanel bottom = new JPanel(new FlowLayout());
+		mesg3 = new JTextField();
+		mesg4 = new JTextField();
+		mesg5 = new JTextField();
+
 		
-		add(top,BorderLayout.NORTH);
-		mesg=new JTextField();
-		top.add(mesg,BorderLayout.NORTH);
-		mesg2=new JTextField();  // 填入單列文字
+		bottom.add(mesg3);
+		bottom.add(mesg4);
+		bottom.add(mesg5);
+		add(bottom, BorderLayout.SOUTH);
+		add(top, BorderLayout.NORTH);
+		setSize(480, 400);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		System.out.println(getWidth());
+		
+		mesg3.setPreferredSize(new Dimension(getWidth()/3, 25));
+		mesg4.setPreferredSize(new Dimension(getWidth()/3, 25));
+		mesg5.setPreferredSize(new Dimension(getWidth()/3, 25));
+		mesg = new JTextField();
+		top.add(mesg, BorderLayout.NORTH);
+		mesg2 = new JTextField(); // 填入單列文字
 		top.add(mesg2, BorderLayout.SOUTH);
-		
-		add(bottom,BorderLayout.SOUTH);
-		mesg3=new JTextField();
-		bottom.add(mesg3,BorderLayout.NORTH);
-		mesg4=new JTextField();
-		bottom.add(mesg4,BorderLayout.CENTER);
-		mesg5=new JTextField();
-		bottom.add(mesg5,BorderLayout.SOUTH);
-		
+
+//		add(bottom,BorderLayout.SOUTH);
+//		mesg3=new JTextField();
+//		bottom.add(mesg3,BorderLayout.WEST);
+//		mesg4=new JTextField();
+//		bottom.add(mesg4,BorderLayout.CENTER);
+//		mesg5=new JTextField();
+//		bottom.add(mesg5,BorderLayout.EAST);
+//		
 //		// 方法一的文字列
 //		mesg=new JTextField();  // 填入單列文字
 //		add(mesg, BorderLayout.NORTH); // 將 mesg單列文字行，放到視窗上方(北方)
@@ -69,9 +87,7 @@ public class Tung38training extends JFrame implements MouseListener{ // 方法�
 		
 		
 		
-		setSize(480, 400);
-		setVisible(true);
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
 	}
 	
 	// 從<方法一>聽進來後，創造一個對外公開的方法要顯示在視窗
