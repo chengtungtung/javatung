@@ -6,7 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import javax.swing.JLabel;
-import javax.xml.crypto.Data;
+
 
 public class MyClock extends JLabel {
 	private Timer timer;

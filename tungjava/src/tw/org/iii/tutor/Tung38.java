@@ -26,7 +26,7 @@ public class Tung38 extends JFrame implements MouseListener{
 		
 		
 		
-		
+		// 創建滑鼠接收器
 		addMouseListener(new MyMouseListener(this));
 		addMouseListener(this);
 		addMouseListener(new MyMouseListenerV3());
@@ -92,8 +92,8 @@ public class Tung38 extends JFrame implements MouseListener{
 
 }
 
-
-
+//----------------------------------------------------------------------------
+// 方法一：設計一個類別去實作MouseListene介面的所有方法
 class MyMouseListener implements MouseListener{
 	private Tung38 Tung38;
 	
@@ -102,19 +102,19 @@ class MyMouseListener implements MouseListener{
 	}
 	
 
-	@Override
+	@Override // mouseClicked 要在原地放開才會觸發
 	public void mouseClicked(MouseEvent e) {  // 只要有大括號就是有實作
 		//System.out.println("Clicked");
 	}
 
-	@Override
+	@Override // mousePressed 點擊
 	public void mousePressed(MouseEvent e) {
 		System.out.println("Pressed1");
 		//System.out.println("Pressed " + e.getX() + ", " + e.getY());
 		Tung38.setMesgText(e.getX() + ", " + e.getY());
 	}
 
-	@Override
+	@Override // mouseReleased 放開
 	public void mouseReleased(MouseEvent e) {
 		//System.out.println("Released");
 	}
@@ -130,7 +130,10 @@ class MyMouseListener implements MouseListener{
 	}
 	
 }
-
+/*
+方法一缺點在於mouseEntered和mouseExited兩方法沒有使用到，但因為介面要全部實作方法，所以還是要打出來實作
+ */
+//-------------------------------------------------------------------------------
 class MyListener2 extends MouseAdapter{
 
 	@Override
