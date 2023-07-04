@@ -14,8 +14,7 @@ public class Tung63 {
 		try {
 			DatagramSocket socket = new DatagramSocket();
 			DatagramPacket packet = new DatagramPacket(data, data.length,
-					InetAddress.getByName("10.0.101.255"), 8888);
-			// 10.0.101.255廣播位置
+					InetAddress.getByName("10.0.101.138"), 8888);
 			socket.send(packet);
 			socket.close();
 		} catch (Exception e) {

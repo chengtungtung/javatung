@@ -3,7 +3,7 @@ package tw.org.iii.tutor;
 public class Tung34 {
 
 	public static void main(String[] args) {
-		// 多型(抽象)
+		// 多型(抽象abstract)
 		// 父類別想要創造多型的子類別，但自己不實作，交給子類別來實作，來發揚光大
 		// 在設計抽象類別時的設計觀點，就是希望想要設計出不同各式各樣的子類別來實作抽象類別，就是想設計子類別的多型
 		

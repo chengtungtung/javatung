@@ -6,6 +6,7 @@ import java.io.IOException;
 public class Tung41 {
 
 	public static void main(String[] args) {
+		// 堆疊的例外
 		// throw
 		Tung411 obj = new Tung411();
 		//obj.m1();
@@ -15,7 +16,7 @@ public class Tung41 {
 
 class Tung411 {
 	void m1() throws Exception {
-		m2();
+		m2(); // m1方法會呼叫m2方法
 	}
 
 	void m2() throws InterruptedException {

@@ -37,17 +37,17 @@ public class TungTop {
 		 29：建構式傳參數
 		 30：TWID 最終測試
 		 31：字串特性(字串內容不會變)、concat、replace
-		 32：
+		 32：StringBuffer特性運用、append
 		 33：多型(型別轉換)、instanceof(判別是否為直系)
-		 34：多型(抽象)
+		 34：多型(抽象abstract)
 		 35：抽象的舉例(矩形、圓形)、Math.PI
-		 36：
+		 36：多型(介面interface)
 		 37：
-		 38：滑鼠
-		 39
-		 40
-		 41
-		 42
+		 38：滑鼠、介面實作方法(五個方法)、巢狀類別、MouseAdapter()
+		 39：例外異常Exception-RuntimeException
+		 40：例外異常Exception-Checked Exception
+		 41：堆疊的例外異常
+		 42：
 		 43
 		 45
 		 46
