@@ -55,6 +55,16 @@ public class TungTop {
 		 48
 		 49
 		 50
+		 51
+		 52
+		 53
+		 54
+		 55
+		 56
+		 57
+		 58
+		 59
+		 60：多重執行緒
 		 
 		 99：九九乘法表(for迴圈、if、break)、找質數題目
 		 pokerv1：洗牌(陣列、for、boolean)

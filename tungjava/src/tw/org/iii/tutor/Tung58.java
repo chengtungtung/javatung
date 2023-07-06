@@ -22,6 +22,15 @@ public class Tung58 {
 			System.out.println(name);
 		}
 		
+		System.out.println("-----------------------");
+		int nameSize = names.size();
+		System.out.println(names.get((int)(Math.random()*nameSize)));  
+		System.out.println("-----------------");
+		names.remove(1);
+		for(String name : names ) {
+			System.out.println(name);
+		}
+		
 	}
 
 }
